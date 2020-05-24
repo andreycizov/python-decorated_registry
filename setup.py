@@ -5,14 +5,14 @@ history = open('HISTORY.md').read()
 reqs = [x.strip() for x in open('requirements.txt').readlines()]
 
 setup(
-    name='race',
+    name='decorated_registry',
     version='0.0.1',
     author='Andrey Cizov',
     author_email='acizov@gmail.com',
-    packages=find_packages(include=('race', 'race.*',)),
+    packages=find_packages(include=('decorated_registry', 'decorated_registry.*',)),
     description='Race condition modelling package',
     keywords='',
-    url='https://github.com/andreycizov/python-race',
+    url='https://github.com/andreycizov/python-decorated_registry',
     include_package_data=True,
     long_description=readme,
     install_requires=reqs,

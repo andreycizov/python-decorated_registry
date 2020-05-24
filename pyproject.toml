@@ -1,6 +1,6 @@
 [tool.poetry]
 
-name = "race"
+name = "decorated_registry"
 version = "0.0.1"
 description = ""
 authors = [
@@ -8,11 +8,11 @@ authors = [
 ]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/andreycizov/python-race"
-repository = "https://github.com/andreycizov/python-race"
-documentation = "https://github.com/andreycizov/python-race"
+homepage = "https://github.com/andreycizov/python-decorated_registry"
+repository = "https://github.com/andreycizov/python-decorated_registry"
+documentation = "https://github.com/andreycizov/python-decorated_registry"
 
-keywords = ["race", "condition", "modelling"]
+keywords = ["registry", "decorator", "generic", "register"]
 
 classifiers = [
         'Development Status :: 2 - Pre-Alpha',
