@@ -71,6 +71,10 @@ class TestDecoratedRegistryExtended(unittest.TestCase):
         class A:
             pass
 
+        @self.registry(b=1)
+        class B:
+            pass
+
         # as here
         self.assertEqual(
             [
@@ -81,6 +85,10 @@ class TestDecoratedRegistryExtended(unittest.TestCase):
                 RegistryItem(
                     payload=dict(a=1),
                     value=A,
+                ),
+                RegistryItem(
+                    payload=dict(b=1),
+                    value=B,
                 ),
             ],
             self.registry.items
@@ -94,6 +102,10 @@ class TestDecoratedRegistryExtended(unittest.TestCase):
                 RegistryItem(
                     payload=dict(a=2),
                     value=A,
+                ),
+                RegistryItem(
+                    payload=dict(b=1),
+                    value=B,
                 ),
             ],
             self.registry.items

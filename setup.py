@@ -6,11 +6,11 @@ reqs = [x.strip() for x in open('requirements.txt').readlines()]
 
 setup(
     name='decorated_registry',
-    version='0.0.1',
+    version='0.0.2',
     author='Andrey Cizov',
     author_email='acizov@gmail.com',
     packages=find_packages(include=('decorated_registry', 'decorated_registry.*',)),
-    description='Race condition modelling package',
+    description='Decorator-based registry for objects with arbitrary payloads',
     keywords='',
     url='https://github.com/andreycizov/python-decorated_registry',
     include_package_data=True,

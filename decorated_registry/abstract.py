@@ -26,6 +26,9 @@ class PayloadFactory(Generic[P]):
 class NonePayloadFactory(PayloadFactory[None]):
 
     def __call__(self, *args, **kwargs):
+        if args or kwargs:
+            raise ValueError('`None` payload does not support any arguments')
+
         return None
 
 
